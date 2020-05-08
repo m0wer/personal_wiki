@@ -1,0 +1,18 @@
+site_name: Personal wiki
+site_url: https://m0wer.github.io/personal_wiki
+repo_name: 'm0wer/personal_wiki'
+repo_url: 'https://github.com/m0wer/personal_wiki'
+
+plugins:
+  - search
+  - autolinks
+  - git-revision-date-localized:
+      type: timeago
+
+theme:
+  name: material
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
