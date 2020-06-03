@@ -19,3 +19,4 @@ tags: [ 'luks', 'cryptsetup', 'encryption', 'cipher', 'device', 'disk', 'usb' ]
 ## Reference
 
 * [howtoforge](https://www.howtoforge.com/automatically-unlock-luks-encrypted-drives-with-a-keyfile) Automatically unlock LUKS drives.
+* [How to Change Your LUKS Encryption Passphrase - Make Tech Easier](https://www.maketecheasier.com/change-luks-encryption-passphrase/)
