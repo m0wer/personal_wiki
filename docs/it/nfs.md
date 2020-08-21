@@ -30,6 +30,14 @@ mount -t nfs4 -o proto=tcp,port=2049 [nfs-server]:/ /mnt
 
 **Note**: Yo should specify the path relative to the root share folder.
 
+##### /etc/fstab
+
+```
+Server:/path/to/export /local_mountpoint nfs hard,intr 0 0
+```
+
+* [Linux NFS Mount Entry in fstab ( /etc/fstab ) with Example](https://linoxide.com/file-system/example-linux-nfs-mount-entry-in-fstab-etcfstab/)
+
 ## Debug
 
 From the client try:
