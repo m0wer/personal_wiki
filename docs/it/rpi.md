@@ -29,3 +29,16 @@ Everything should be ready now.
 
 * [Raspberry Pi
   Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=187999)
+
+## Disable swap
+
+To make your SD card live longer, you can reduce the number of reads and writes
+by completely disabling swap.
+
+```bash
+sudo dphys-swapfile swapoff
+sudo dphys-swapfile uninstall
+sudo update-rc.d dphys-swapfile remove
+```
+
+* [Stopping SD Card Corruption on Raspberry Pi’s Raspbian – IdeaHeap](https://ideaheap.com/2013/07/stopping-sd-card-corruption-on-a-raspberry-pi/)
