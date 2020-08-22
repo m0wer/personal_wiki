@@ -1279,6 +1279,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#disable-swap" class="md-nav__link">
+    Disable swap
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1720,6 +1727,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#disable-swap" class="md-nav__link">
+    Disable swap
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1763,6 +1777,17 @@ with <code>gparted</code>:</p>
 <li><a href="https://www.raspberrypi.org/forums/viewtopic.php?t=187999">Raspberry Pi
   Forums</a></li>
 </ul>
+<h2 id="disable-swap">Disable swap</h2>
+<p>To make your SD card live longer, you can reduce the number of reads and writes
+by completely disabling swap.</p>
+<div class="highlight"><pre><span></span><code>sudo dphys-swapfile swapoff
+sudo dphys-swapfile uninstall
+sudo update-rc.d dphys-swapfile remove
+</code></pre></div>
+
+<ul>
+<li><a href="https://ideaheap.com/2013/07/stopping-sd-card-corruption-on-a-raspberry-pi/">Stopping SD Card Corruption on Raspberry Pi’s Raspbian – IdeaHeap</a></li>
+</ul>
                 
                   
                     
@@ -1771,7 +1796,7 @@ with <code>gparted</code>:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1588953228000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1598011776000' locale='en'></span>
     
   </small>
 </div>

@@ -1023,6 +1023,19 @@
     Client
   </a>
   
+    <nav class="md-nav" aria-label="Client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etcfstab" class="md-nav__link">
+    /etc/fstab
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1775,6 +1788,19 @@
     Client
   </a>
   
+    <nav class="md-nav" aria-label="Client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etcfstab" class="md-nav__link">
+    /etc/fstab
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1850,6 +1876,13 @@ of the root share (the one with <code>fsid=0</code>).</p>
 </code></pre></div>
 
 <p><strong>Note</strong>: Yo should specify the path relative to the root share folder.</p>
+<h5 id="etcfstab">/etc/fstab</h5>
+<div class="highlight"><pre><span></span><code>Server:/path/to/export /local_mountpoint nfs hard,intr 0 0
+</code></pre></div>
+
+<ul>
+<li><a href="https://linoxide.com/file-system/example-linux-nfs-mount-entry-in-fstab-etcfstab/">Linux NFS Mount Entry in fstab ( /etc/fstab ) with Example</a></li>
+</ul>
 <h2 id="debug">Debug</h2>
 <p>From the client try:</p>
 <div class="highlight"><pre><span></span><code>mount -v -o <span class="nv">nfsvers</span><span class="o">=</span><span class="m">4</span> <span class="o">[</span>nfs-server<span class="o">]</span>:/ /mnt
@@ -1868,7 +1901,7 @@ of the root share (the one with <code>fsid=0</code>).</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class='timeago' datetime='1588953228000' locale='en'></span>
+      Last update: <span class='timeago' datetime='1598011541000' locale='en'></span>
     
   </small>
 </div>
